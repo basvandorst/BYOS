@@ -7,13 +7,13 @@
 [TBD]
 
 ## Installation & configuration
-1. Create an (free) account on [API.AI](http://api.ai)
+1. Create a free account on [API.AI](http://api.ai)
 2. Create a new agent in the API.AI console 
 3. Import the JSON files `install/intents/*.json` or check the screenshots in the directory
-4. Checkout this repo or copy it to your server
-5. Excecute the `install/db.sql` on your DB
+4. Checkout this repo or copy the files to your server
+5. Excecute the `install/db.sql` on your database
 6. Change the subscription token and access key (`index.html`)
-7. Start talking (... or programming)!
+7. Start talking (...or programming)!
 
 
 ## BYOS features
