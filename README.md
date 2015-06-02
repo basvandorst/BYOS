@@ -1,5 +1,5 @@
 # BYOS (Build Your Own Siri)
-TLDR: A very easy PHP example of your own database driven Siri
+**TLDR;** A very easy PHP example of your own database driven Siri
 
 
 # Video
