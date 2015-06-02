@@ -1,5 +1,5 @@
 # BYOS (Build Your Own Siri)
-**TLDR;** A very easy example of your own database driven Siri
+**TLDR;** A very easy example of your own database driven Siri (using API.AI)
 
 ![BYOS](https://cloud.githubusercontent.com/assets/1196963/7947158/99c41094-097b-11e5-8bf6-c9d776b423ff.png)
 
