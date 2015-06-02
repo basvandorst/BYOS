@@ -22,7 +22,7 @@
 > "Turn on the lights in the kitchen"
 > "Turn off the lights in the bathroom"
 
-* Authorize yourself with a voice-password
+* Authorize yourself with a (spoken) password
 > "My password is 1337"
 
 * Find records in a database
