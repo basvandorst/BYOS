@@ -20,7 +20,6 @@
 
 2. Smarthome: turn on/off the lights
 > "Turn on the lights in the kitchen"
-or
 > "Turn off the lights in the bathroom"
 
 3. Authorize yourself with a voice-password
@@ -28,7 +27,6 @@ or
 
 4. Find records in a database
 > "Find people with blue hair"
-or 
 > "Find people with green eyes"
 
 
