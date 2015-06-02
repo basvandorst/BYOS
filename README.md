@@ -17,7 +17,7 @@
 
 
 ## BYOS features
-* Asking the time
+* Ask for the time
 > "What time is it now?"
 
 * Smarthome: turn on/off the lights
@@ -29,7 +29,6 @@
 
 * Find records in a database
 > "Find people with blue hair"
-
 > "Find people with green eyes"
 
 
