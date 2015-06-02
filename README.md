@@ -10,8 +10,8 @@
 1. Create an (free) account on [API.AI](http://api.ai)
 2. Create a new agent in the API.AI console and import the `install/intents/*` folder
 2. Checkout this repo or copy it to your server
-3. Excecute the install/db.sql on your DB
-5. Change the token/keys (index.html)
+3. Excecute the `install/db.sql` on your DB
+5. Change the subscription token and access key (`index.html`)
 6. Start talking (... or programming)!
 
 
