@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BYOS (Build Your Own Siri) - API.AI</title>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/cover.css" rel="stylesheet">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+		// copy/paste:	https://gist.github.com/ystrot/e799f338ab9849c90b04
+		var accessToken = "YOUR ACCESS TOKEN HERE";
+		var subscriptionKey = "YOUR SUBSCRIPTION TOKEN HERE";
+		var baseUrl = "https://api.api.ai/v1/";
+
+		$(document).ready(function() {
+			$("#input").keypress(function(event) {
+				if (event.which == 13) {
+					event.preventDefault();
+					send();
+				}
+			});
+			$("#rec").click(function(event) {
+				switchRecognition();
+			});
+		});
+
+		var recognition;
+
+		function startRecognition() {
+			recognition = new webkitSpeechRecognition();
+			recognition.onstart = function(event) {
+				updateRec();
+			};
+			recognition.onresult = function(event) {
+				var text = "";
+			    for (var i = event.resultIndex; i < event.results.length; ++i) {
+			    	text += event.results[i][0].transcript;
+			    }
+			    setInput(text);
+				stopRecognition();
+			};
+			recognition.onend = function() {
+				stopRecognition();
+			};
+			recognition.lang = "en-US";
+			recognition.start();
+		}
+	
+		function stopRecognition() {
+			if (recognition) {
+				recognition.stop();
+				recognition = null;
+			}
+			updateRec();
+		}
+
+		function switchRecognition() {
+			if (recognition) {
+				stopRecognition();
+			} else {
+				startRecognition();
+			}
+		}
+
+		function setInput(text) {
+			$("#input").val(text);
+			send();
+		}
+
+		function updateRec() {
+			$("#rec").prop('disabled',(recognition ? true: false));
+		}
+
+		function send() {
+			var text = $("#input").val();
+			$.ajax({
+				type: "POST",
+				url: baseUrl + "query/",
+				contentType: "application/json; charset=utf-8",
+				dataType: "json",
+				headers: {
+					"Authorization": "Bearer " + accessToken,
+					"ocp-apim-subscription-key": subscriptionKey
+				},
+				data: JSON.stringify({ q: text, lang: "en" }),
+
+				success: function(data) {
+					$("#debug").text(JSON.stringify(data, undefined, 2));
+					lookup(data);
+				},
+				error: function() {
+					$("#debug").text("Internal Server Error");
+				}
+			});
+		}
+		
+		function lookup(api_ai_output) {
+			$.ajax({
+				type: "POST",
+				url: "lookup.php",
+				data: {q: JSON.stringify(api_ai_output)},
+				
+				success: function(data) {
+					$("#output").text(JSON.stringify(data, undefined, 2));
+				},
+				error: function() {
+					$("#output").text("Internal Server Error");
+				}
+			});
+		}
+
+	</script>
+	
+  </head>
+
+  <body>
+    <div class="container">
+		<button type="button" class="btn btn-success btn-circle btn-xl" id="rec">
+			 <img src="assets/images/record.png" width="200" style="outline:none;"/>
+		</button>
+		
+		<br />
+		<br />
+		<br />
+		
+		<h2>BYOS input</h2>
+		<input class="form-control input-lg" type="text" placeholder="" id="input">
+		
+		<h2>BYOS ouput</h2>
+		<textarea class="form-control input-lg" id="output" cols="40" rows="15"></textarea>
+		
+		<h2>Debug info</h2>
+		<textarea class="form-control input-lg" id="debug" cols="40" rows="15"></textarea>
+         
+     </div>
+  </body>
+</html>
+
+
+
