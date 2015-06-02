@@ -6,7 +6,7 @@
 # Video
 [TBD]
 
-Installation & configuration
+## Installation & configuration
 * Create an (free) account on [API.AI](http://api.ai)
 * Checkout this repo or copy it to your server
 * Excecute the db.sql on your DB
