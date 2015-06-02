@@ -7,25 +7,25 @@
 [TBD]
 
 ## Installation & configuration
-* Create an (free) account on [API.AI](http://api.ai)
-* Checkout this repo or copy it to your server
-* Excecute the db.sql on your DB
-* Change the token/keys (index.html)
-* Start talking (... or programming)!
+1. Create an (free) account on [API.AI](http://api.ai)
+2. Checkout this repo or copy it to your server
+3. Excecute the db.sql on your DB
+4. Change the token/keys (index.html)
+5. Start talking (... or programming)!
 
 
 ## BYOS features
-1. Asking the time
+* Asking the time
 > "What time is it now?"
 
-2. Smarthome: turn on/off the lights
+* Smarthome: turn on/off the lights
 > "Turn on the lights in the kitchen"
 > "Turn off the lights in the bathroom"
 
-3. Authorize yourself with a voice-password
+* Authorize yourself with a voice-password
 > "My password is 1337"
 
-4. Find records in a database
+* Find records in a database
 > "Find people with blue hair"
 > "Find people with green eyes"
 
