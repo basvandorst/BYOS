@@ -1,0 +1,23 @@
+{
+  "id": "0fd100ff-6cc0-4cd8-aba6-410b44a4ab2b",
+  "name": "example 2",
+  "auto": true,
+  "contexts": [],
+  "templates": [
+    "My password is @sys.any:password"
+  ],
+  "responses": [
+    {
+      "action": "auth",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "name": "password",
+          "value": "$password",
+          "defaultValue": ""
+        }
+      ]
+    }
+  ],
+  "state": "LOADED"
+}

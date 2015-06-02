@@ -1,0 +1,17 @@
+{
+  "id": "d5d5c5cb-8014-4a17-a5ae-7e7955645106",
+  "name": "example 1",
+  "auto": true,
+  "contexts": [],
+  "templates": [
+    "What time is it?"
+  ],
+  "responses": [
+    {
+      "action": "timenow",
+      "affectedContexts": [],
+      "parameters": []
+    }
+  ],
+  "state": "LOADED"
+}

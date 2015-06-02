@@ -1,0 +1,34 @@
+{
+  "id": "753472e7-0694-4a2c-b376-da489852cc45",
+  "name": "example 3",
+  "auto": true,
+  "contexts": [],
+  "templates": [
+    "select * from @sys.any:table where @sys.any:field is @sys.any:value",
+    "find @sys.any:table with @sys.any:value @sys.any:field"
+  ],
+  "responses": [
+    {
+      "action": "select",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "name": "value",
+          "value": "$value",
+          "defaultValue": ""
+        },
+        {
+          "name": "table",
+          "value": "$table",
+          "defaultValue": ""
+        },
+        {
+          "name": "field",
+          "value": "$field",
+          "defaultValue": ""
+        }
+      ]
+    }
+  ],
+  "state": "LOADED"
+}
