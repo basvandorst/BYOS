@@ -3,7 +3,7 @@
 
 ![BYOS](https://cloud.githubusercontent.com/assets/1196963/7947158/99c41094-097b-11e5-8bf6-c9d776b423ff.png)
 
-# Video
+## Video
 [![smarthome example](http://img.youtube.com/vi/mcOPTQkAg0U/0.jpg)](https://www.youtube.com/watch?v=mcOPTQkAg0U)
 
 ## Installation & configuration
