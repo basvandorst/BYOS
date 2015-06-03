@@ -4,9 +4,7 @@
 ![BYOS](https://cloud.githubusercontent.com/assets/1196963/7947158/99c41094-097b-11e5-8bf6-c9d776b423ff.png)
 
 # Video
-[![demo1](http://img.youtube.com/vi/jHnDPuXWbO4/0.jpg)](https://www.youtube.com/watch?v=jHnDPuXWbO4)
-[![demo2](http://img.youtube.com/vi/7su-nowZHwg/0.jpg)](https://www.youtube.com/watch?v=7su-nowZHwg)
-[![demo3](http://img.youtube.com/vi/mcOPTQkAg0U/0.jpg)](https://www.youtube.com/watch?v=mcOPTQkAg0U)
+[![smarthome example](http://img.youtube.com/vi/mcOPTQkAg0U/0.jpg)](https://www.youtube.com/watch?v=mcOPTQkAg0U)
 
 ## Installation & configuration
 1. Create a free account on [API.AI](http://api.ai)
