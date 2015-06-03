@@ -1,9 +1,6 @@
 # BYOS - Build Your Own Siri
 **TLDR;** A working example of how to build your own database driven Siri (using API.AI)
 
-![BYOS](https://cloud.githubusercontent.com/assets/1196963/7966230/ea290574-0a22-11e5-829f-01b6f3fd714f.png)
-
-## Video
 [![Awesome!](https://cloud.githubusercontent.com/assets/1196963/7966721/278a951a-0a26-11e5-88d4-12e2e58c8a1a.png)](https://www.youtube.com/watch?v=nQTO9dGzibQ)
 
 ## Installation & configuration
